@@ -11,7 +11,7 @@ body {
 }
 
 
-button {
+.btn {
     color: #fbfcfd;
     padding: 10px 25px;
     background: transparent;
@@ -19,6 +19,16 @@ button {
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    transition: all 2s;
+    font-weight: bold;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: #fff;
+        color: #50e2a5;
+        border: none;
+        outline: none;
+    }
 }
 
 .main {
@@ -63,49 +73,7 @@ button {
             line-height: 80px;
         }
     }
-    
-    .side-bar {
-        width: 50px;
-        height: 100vh;
-        background: linear-gradient(#00545d, #000729);
-        position: absolute;
-        right: 0;
-        top: 0;
-        
-        .menu {
-            display: block;
-            width: 25px;
-            margin: 40px auto 0;
-            cursor: pointer;
-        }
-        
-        .social-links,
-        .useful-links {
-            
-            img {
-                width: 25px;
-                margin: 5px auto;
-                cursor: pointer;
-            }
-        }
-            
-        
-        .social-links {
-            width: 50px;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .useful-links {
-            width: 50px;
-            text-align: center;
-            position: absolute;
-            bottom: 30px;
-        }
-    }
-    
+
     .bubbles {
         width: 100%;
         display: flex;
@@ -151,6 +119,68 @@ button {
             width: 35px;
         }
     }
+    
+    .side-bar {
+        width: 50px;
+        height: 100vh;
+        background: linear-gradient(#00545d, #000729);
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        .menu {
+            display: block;
+            width: 25px;
+            margin: 40px auto 0;
+            cursor: pointer;
+        }
+        
+        .social-links,
+        .useful-links {
+
+            /*
+
+            a {
+                border: 1px solid #fff;
+                display: block;
+                border-radius: 50%;
+                padding: 5px 3px;
+                margin: 5px auto;
+                font-size: .8rem;
+
+                i {
+                    width: 25px;
+                    cursor: pointer;
+                    color: #fff;
+                    
+                    
+                }
+            } */
+            
+            img {
+                width: 25px;
+                margin: 5px auto;
+                cursor: pointer;
+            }
+        }
+            
+        
+        .social-links {
+            width: 50px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .useful-links {
+            width: 50px;
+            text-align: center;
+            position: absolute;
+            bottom: 30px;
+        }
+    }
+    
 }
 
 // Keyframes
